@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&family=Ubuntu:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+/* header styles */
+
+body{
+    /* width: 90%; */
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
+}
+
+.header{
+    /* width: 90%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px;
+    /* margin-left: 30px; */
+}
+.header-title{
+    color: #423737;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.header-details ul{
+    display: flex;
+}
+.header-details li{
+    list-style: none;
+    margin: 10px;
+}
+.header-details a{
+    text-decoration: none;
+    color: #423737;
+    font-weight: bold;
+}
+
+/* main section styles */
+
+.title-container{
+    display: flex;
+    padding: 40px 80px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    width: 600px;
+}
+.title-name{
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #423737;
+}
+.title-details{
+    font-weight: bold;
+    color: #423737;
+}
+.btn{
+    margin-top: 20px;
+    background-color:deeppink;
+    padding: 10px 20px;
+    border: 0;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 30px;
+}
+.title-container img{
+    width: 400px;
+    height: 400px;
+    border: 2px solid #f7e3e3 ;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+/* responsive web styles */
+
+@media  screen and (max-width:576px) {
+    body{
+        font-family: normal;
+        background-color: rgb(214, 247, 236);
+    }
+    .header{
+        /* width: 90%; */
+        flex-direction: column;
+        align-items: center;
+        padding:15px;
+}
+.header-title{
+    color: #423737;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.title-container{
+    flex-direction: column;
+    padding: 15px;
+    /* align-items: center; */
+}
+.title{
+    width: 100%;
+}
+.title-name{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #423737;
+    text-align: center;
+}
+.btn{
+    margin-left: 100px;
+}
+.title-container img{
+    width: 70%;
+    height: auto;
+    border: 0;
+    padding: 0;
+    border-radius: 0%;
+    margin-top: 10px;
+}
+}
